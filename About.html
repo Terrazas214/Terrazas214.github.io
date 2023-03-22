@@ -25,9 +25,49 @@
     <a href="About.html"><i class="fa fa-fw fa-envelope"></i> About</a> 
     <a href="contactus.html"><i class="fa fa-fw fa-user"></i> Contact</a>
   </div>
+  <div class="background-image">
+    
+
+    <div class="text-block">
+             <h4>Nature</h4>
+             <p>What a beautiful galaxy</p>
+           </div>
+ 
+ </div>
 </body>
 <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
+  
+body, html {
+  height: 100%;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.background-image {
+
+background-image: url('./graham-holtshausen-fUnfEz3VLv4-unsplash.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
   
   .navbar {
     width: 100%;
@@ -46,7 +86,7 @@
   .navbar a:hover {
     background-color: #ffffff;
   }
-
+  
   
   @media screen and (max-width: 500px) {
     .navbar a {
