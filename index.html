@@ -19,11 +19,11 @@
 </head>
 
 <body>
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./About.html">About</a>
-    <a href="./contactus.html">Contact</a>
-  </nav>
+  <div class="navbar">
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>  
+    <a href="About.html"><i class="fa fa-fw fa-envelope"></i> About</a> 
+    <a href="contactus.html"><i class="fa fa-fw fa-user"></i> Contact</a>
+  </div>
 <div class="background-image">
     
 
@@ -74,6 +74,38 @@ height: 100%;
 }
 </style>
 
+<style>
+
+  
+  .navbar {
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: rgb(196, 144, 255);
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ffffff;
+  }
+  
+  .active {
+    background-color: #82c3ff;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+</style>
 
 
 </html>
