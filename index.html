@@ -1,108 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-<meta charset = "utf-8" >
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
-
-
-<title> Eliptic Galaxy </title>
-
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-  <div class="navbar">
-    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>  
-    <a href="About.html"><i class="fa fa-fw fa-envelope"></i> About</a> 
-    <a href="contactus.html"><i class="fa fa-fw fa-user"></i> Contact</a>
-  </div>
-<div class="background-image">
-    
-
-   <div class="text-block">
-            <h4>Welcome to my site Eros,</h4>
-            <p>We are steps away from the future</p>
-          </div>
-
-</div>
-
-
-
-
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="hero">
+			<div class="container">
+				<h1>Welcome to My Portfolio</h1>
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name">
+					<label for="bio">Bio:</label>
+					<textarea id="bio" name="bio"></textarea>
+				</form>
+			</div>
+		</section>
+	</main>
 </body>
-
-<style>
-
-body, html {
-  height: 100%;
-}
-
-* {
-
-    margin: 0;
-    padding: 0;
-}
-
-
-.background-image {
-
-background-image: url('./graham-holtshausen-fUnfEz3VLv4-unsplash.jpg');
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-
-}
-
-/* Bottom right text */
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-</style>
-
-<style>
-
-  
-  .navbar {
-    width: 100%;
-    background-color: #000000;
-    overflow: auto;
-  }
-  
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: rgb(196, 144, 255);
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background-color: #ffffff;
-  }
-  
-  
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
-</style>
-
-
 </html>
