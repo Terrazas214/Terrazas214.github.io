@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #666;
     color: #fff;
     padding: 20px 0;
 }
@@ -42,26 +42,30 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+.content {
     padding: 50px 0;
 }
 
-section h2 {
+h2 {
     margin-bottom: 30px;
 }
 
-.portfolio-item {
-    margin-bottom: 30px;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.about-content img {
+    max-width: 45%;
+}
+
+.about-content p {
+    width: 45%;
 }
 
 footer {
-    background: #333;
+    background: #666;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -69,4 +73,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-	
