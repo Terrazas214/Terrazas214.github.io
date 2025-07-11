@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The next website of the future.</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Background Site</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      height: 100vh;
+      margin: 0;
+      background-image: url('background.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-position 0.1s;
+      overflow: hidden;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40vh;
+      font-size: 2em;
+      text-shadow: 0 2px 8px #000;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>We start by sharing idea and a goal</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Me</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="content">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="placeholder-image.jpg" alt="About Me Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam nec lacus eleifend aliquam. Nulla facilisi. Phasellus malesuada hendrerit ligula, ac ultricies lacus fermentum a. Duis at vehicula felis. Fusce nec sodales nunc. Donec eget posuere tortor.</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Grey & White Website. All rights reserved.</p>
-        </div>
-    </footer>
+  <div class="content">
+    Welcome to My Interactive Background Website!
+  </div>
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const x = e.clientX / window.innerWidth * 100;
+      const y = e.clientY / window.innerHeight * 100;
+      document.body.style.backgroundPosition = `${x}% ${y}%`;
+    });
+  </script>
 </body>
 </html>
