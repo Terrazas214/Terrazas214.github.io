@@ -6,16 +6,18 @@ body, html {
 
 .bg-image {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 1200px;
+  height: 800px;
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  background-image:url (graham-holtshausen-fUnfEz3VLv4-unsplash.jpg);
-  background-size: cover;
+  background-image: url('graham-holtshausen-fUnfEz3VLv4-unsplash.jpg');
+  background-size: 1200px 800px;
   background-position: center;
   background-repeat: no-repeat;
-  transition: background-size 0.5s, filter 0.5s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
 }
+
