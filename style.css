@@ -19,8 +19,3 @@ body, html {
   background-repeat: no-repeat;
   transition: background-size 0.5s, filter 0.5s;
 }
-
-.bg-image:hover {
-  background-size: 110%;
-  filter: brightness(0.85);
-}
