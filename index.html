@@ -2,45 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Background Site</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      height: 100vh;
-      margin: 0;
-      background-image: url('background.jpg'); /* Replace with your image path */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: background-position 0.1s;
-      overflow: hidden;
-    }
-    .content {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      top: 40vh;
-      font-size: 2em;
-      text-shadow: 0 2px 8px #000;
-    }
-  </style>
+  <title>My GitHub Pages Site</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="content">
-    Welcome to My Interactive Background Website!
+  <div class="bg-image">
+    <h1>Welcome to My Site</h1>
+    <p>Hover to see the background effect!</p>
   </div>
-  <script>
-    document.addEventListener('mousemove', function(e) {
-      const x = e.clientX / window.innerWidth * 100;
-      const y = e.clientY / window.innerHeight * 100;
-      document.body.style.backgroundPosition = `${x}% ${y}%`;
-    });
-  </script>
 </body>
 </html>
